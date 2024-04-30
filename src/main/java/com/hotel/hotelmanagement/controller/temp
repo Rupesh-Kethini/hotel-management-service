@@ -1,0 +1,8 @@
+
+2024-04-28T01:39:02.474-07:00  WARN 10316 ---
+[hotel-management-service] [nio-8082-exec-4]
+.w.s.m.s.DefaultHandlerExceptionResolver :
+Resolved [org.springframework.http.converter.HttpMessageNotReadableException:
+JSON parse error: Cannot construct instance of `com.hotel.hotelmanagement.entity.Hotel`
+(although at least one Creator exists):
+no int/Int-argument constructor/factory method to deserialize from Number value (2)]

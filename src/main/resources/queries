@@ -1,0 +1,20 @@
+CREATE TABLE Hotel (
+    hotel_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    description TEXT,
+    rating DECIMAL(3, 1)
+);
+
+
+INSERT INTO Hotel (name, location, description, rating, noOfUsers)
+VALUES ('Example Hotel', 'Example Location', 'This is a sample hotel description.', 4.5);
+
+
+CREATE TABLE Room (
+    id SERIAL PRIMARY KEY,
+    room_Id BIGINT,
+    room_number VARCHAR(50),
+    room_type VARCHAR(100),
+    FOREIGN KEY (room_Id) REFERENCES Hotel(hotel_id)
+);
